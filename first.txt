@@ -1,0 +1,54 @@
+S : void  
+A : return  break  continue  if  while  for  scanf  printf  IDN  int  float  char  string  
+P : break  continue  if  while  for  scanf  printf  IDN  int  float  char  string  
+BREAK_F : $  
+CONTI_F : $  
+X : int  float  char  string  
+C : break  continue  $  if  while  for  scanf  printf  IDN  int  float  char  string  
+B : if  while  for  scanf  printf  
+H : else  $  
+IF_FJ : $  
+IF_BACKPATCH_FJ : $  
+IF_RJ : $  
+IF_BACKPATCH_RJ : $  
+WHILE_FJ : $  
+WHILE_RJ : $  
+WHILE_BACKPATCH_FJ : $  
+V : ;  int  float  char  string  IDN  
+FOR_FJ : $  
+SINGLE : $  
+FOR_RJ : $  
+FOR_BACKPATCH_FJ : $  
+SCANF : $  
+PRINTF : $  
+R : IDN  
+OP_S : =  ;  +  -  *  /  ++  --  
+Q : IDN  $  
+OP_A : =  +  -  *  /  ++  --  $  
+OP_P : $  
+OP_PC : +  -  *  /  $  
+Y : int  float  char  string  
+Z : IDN  
+N : =  $  
+SINGLE_P : $  
+ASS_R : $  
+ASS_F : $  
+EQ : $  
+D : ==  !=  >  <  >=  <=  
+COMPARE_OP : $  
+G : ==  !=  >  <  >=  <=  IDN  NUM  CHAR  STR  (  
+COMPARE : $  
+L : +  -  $  IDN  NUM  CHAR  STR  (  *  /  
+ADD_SUB : $  
+L1 : +  -  $  
+ADD : $  
+SUB : $  
+T : IDN  NUM  CHAR  STR  (  *  /  $  
+DIV_MUL : $  
+T1 : *  /  $  
+MUL : $  
+DIV : $  
+F : IDN  NUM  CHAR  STR  (  $  
+TRAN_LF : $  
+O : ++  --  $  
+SINGLE_OP : $  

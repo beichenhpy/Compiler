@@ -1,0 +1,54 @@
+S : #  
+A : }  
+P : break  continue  if  while  for  scanf  printf  IDN  int  float  char  string  return  }  
+BREAK_F : ;  
+CONTI_F : ;  
+X : ==  !=  >  <  >=  <=  IDN  NUM  CHAR  STR  (  break  continue  if  while  for  scanf  printf  int  float  char  string  return  }  
+C : return  }  
+B : break  continue  if  while  for  scanf  printf  IDN  int  float  char  string  return  }  
+H : break  continue  if  while  for  scanf  printf  IDN  int  float  char  string  return  }  
+IF_FJ : {  
+IF_BACKPATCH_FJ : else  break  continue  if  while  for  scanf  printf  IDN  int  float  char  string  return  }  
+IF_RJ : else  break  continue  if  while  for  scanf  printf  IDN  int  float  char  string  return  }  
+IF_BACKPATCH_RJ : break  continue  if  while  for  scanf  printf  IDN  int  float  char  string  return  }  
+WHILE_FJ : {  
+WHILE_RJ : break  continue  if  while  for  scanf  printf  IDN  int  float  char  string  return  }  
+WHILE_BACKPATCH_FJ : break  continue  if  while  for  scanf  printf  IDN  int  float  char  string  return  }  
+V : ==  !=  >  <  >=  <=  IDN  NUM  CHAR  STR  (  
+FOR_FJ : ;  
+SINGLE : }  ==  !=  >  <  >=  <=  IDN  NUM  CHAR  STR  (  break  continue  if  while  for  scanf  printf  int  float  char  string  return  
+FOR_RJ : break  continue  if  while  for  scanf  printf  IDN  int  float  char  string  return  }  
+FOR_BACKPATCH_FJ : break  continue  if  while  for  scanf  printf  IDN  int  float  char  string  return  }  
+SCANF : ;  
+PRINTF : ;  
+R : ==  !=  >  <  >=  <=  IDN  NUM  CHAR  STR  (  break  continue  if  while  for  scanf  printf  int  float  char  string  return  }  
+OP_S : ==  !=  >  <  >=  <=  IDN  NUM  CHAR  STR  (  break  continue  if  while  for  scanf  printf  int  float  char  string  return  }  
+Q : )  
+OP_A : )  
+OP_P : +  -  *  /  =  
+OP_PC : =  
+Y : IDN  
+Z : ;  
+N : ;  
+SINGLE_P : ;  
+ASS_R : IDN  NUM  CHAR  STR  
+ASS_F : IDN  
+EQ : ;  
+D : IDN  NUM  CHAR  STR  (  )  ;  
+COMPARE_OP : ==  !=  >  <  >=  <=  
+G : )  ;  
+COMPARE : )  ;  
+L : ;  )  
+ADD_SUB : ;  )  
+L1 : ;  )  
+ADD : ;  )  
+SUB : ;  )  
+T : +  -  ;  )  
+DIV_MUL : +  -  ;  )  
+T1 : +  -  ;  )  
+MUL : +  -  ;  )  
+DIV : +  -  ;  )  
+F : )  ==  !=  >  <  >=  <=  ;  *  /  +  -  
+TRAN_LF : )  ==  !=  >  <  >=  <=  ;  *  /  +  -  
+O : ;  )  
+SINGLE_OP : ++  --  

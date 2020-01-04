@@ -1,0 +1,93 @@
+S -> void main ( ) { A }
+A -> C return ;
+P -> X
+P -> B
+P -> R
+P -> break BREAK_F ;
+P -> continue CONTI_F ;
+BREAK_F -> $
+CONTI_F -> $
+X -> Y Z ;
+C -> P C
+C -> $
+B -> if ( G ) IF_FJ { C } H
+H -> IF_BACKPATCH_FJ IF_RJ else { C } IF_BACKPATCH_RJ
+H -> IF_BACKPATCH_FJ IF_RJ IF_BACKPATCH_RJ
+IF_FJ -> $
+IF_BACKPATCH_FJ -> $
+IF_RJ -> $
+IF_BACKPATCH_RJ -> $
+B -> while ( G ) WHILE_FJ { C } WHILE_RJ WHILE_BACKPATCH_FJ
+WHILE_FJ -> $
+WHILE_RJ -> $
+WHILE_BACKPATCH_FJ -> $
+B -> for ( V G FOR_FJ ; Q ) { C SINGLE } FOR_RJ FOR_BACKPATCH_FJ
+V -> X
+V -> R
+V -> ;
+FOR_FJ -> $
+SINGLE -> $
+FOR_RJ -> $
+FOR_BACKPATCH_FJ -> $
+B -> scanf ( "%d" , & F ) SCANF ;
+B -> printf ( "%d" , F ) PRINTF ;
+SCANF -> $
+PRINTF -> $
+R -> ASS_R IDN OP_S
+OP_S -> OP_P OP_PC = L EQ ;
+OP_S -> O ; SINGLE
+Q -> ASS_R IDN OP_A
+OP_A -> OP_P OP_PC = L
+OP_A -> O
+OP_P -> $
+OP_PC -> +
+OP_PC -> -
+OP_PC -> *
+OP_PC -> /
+OP_PC -> $
+Q -> $
+Y -> int
+Y -> float
+Y -> char
+Y -> string
+Z -> ASS_F IDN N
+N -> = L EQ
+N -> SINGLE_P
+SINGLE_P -> $
+ASS_R -> $
+ASS_F -> $
+EQ -> $
+D -> COMPARE_OP ==
+D -> COMPARE_OP !=
+D -> COMPARE_OP >
+D -> COMPARE_OP <
+D -> COMPARE_OP >=
+D -> COMPARE_OP <=
+COMPARE_OP -> $
+G -> F D F COMPARE
+COMPARE -> $
+L -> T L1 ADD_SUB
+ADD_SUB -> $
+L1 -> + L ADD
+ADD -> $
+L1 -> - L SUB
+SUB -> $
+L1 -> $
+T -> F T1 DIV_MUL
+DIV_MUL -> $
+T1 -> * T MUL
+MUL -> $
+T1 -> / T DIV
+DIV -> $
+T1 -> $
+F -> ASS_R IDN
+F -> ASS_R NUM
+F -> ASS_R CHAR
+F -> ASS_R STR
+F -> ( L ) TRAN_LF
+TRAN_LF -> $
+F -> $
+O -> SINGLE_OP ++
+O -> SINGLE_OP --
+SINGLE_OP -> $
+O -> $
